@@ -6,42 +6,28 @@ const team = [
   {
     name: 'Bappy Golder',
     role: 'CEO & Founder',
-    image: 'https://pbs.twimg.com/profile_images/1659784460232183812/_niU8frS_400x400.jpg',
+    image: '/Public/Images/bappy-goldeer-founder-coo.jpeg',
     bio: 'Leading Operations, UX Design, Product Development & Marketing Ops with a 15+ years experience in tech & Business.',
     social: { linkedin: '#', twitter: '#', github: '#' }
   },
   {
-    name: 'Pia Marie ',
-    role: 'Account Manger',
-    image: 'https://media.licdn.com/dms/image/v2/C5603AQGy29f3sZeOaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1604235036122?e=1749686400&v=beta&t=kjzx2CGKHPz598H2cKRZSmr_GXc6aKLolVFDTGnmEnA',
+    name: 'Pia Marie',
+    role: 'Account Manager',
+    image: '/Public/Images/pia-marie.jpeg',
     bio: 'Your Result driven & key to detail manager with 5+ years experience.',
     social: { linkedin: '#', twitter: '#', github: '#' }
   },
   {
     name: 'Bahauddin Chishte',
     role: 'Operations and Fulfillment Lead',
-    image: 'https://avatars.githubusercontent.com/u/91181868?v=4',
-    bio: 'Experienced in various filled and flexible to work with Software, Business & Marketing.',
-    social: { linkedin: '#', twitter: '#', github: '#' }
-  },
-  {
-    name: 'Shahabuddin Chishte',
-    role: 'Graphics Designer & Operations Coordinator',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQFqhQKVWS34ig/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1679032222478?e=1749686400&v=beta&t=90eKRANoQTCOiIIIHyD0UqweZvHlf3EYVOY_vbQgAF8',
-    bio: 'Graphics Designer with strong experties in office management',
-    social: { linkedin: '#', twitter: '#', github: '#' }
-  },
-  {
-    name: 'Ashraful Dihan',
-    role: 'UX Designer',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQEV0H-xUb73dw/profile-displayphoto-shrink_800_800/B56ZYaj4YnGsAk-/0/1744202336809?e=1749686400&v=beta&t=ux-k9KGzvoqC8f33LAYAL_irA5u46KT5x3LAE08Cyxo',
-    bio: 'Experienced in UI & UX over 2 years',
+    image: '/Public/Images/bahauddin-chishte-software&fulfilment_lead.jpeg',
+    bio: 'Experienced in various fields and flexible to work with Software, Business & Marketing.',
     social: { linkedin: '#', twitter: '#', github: '#' }
   },
   {
     name: 'Saad Hossain',
     role: 'Product Manager',
-image:'https://media.licdn.com/dms/image/v2/D5603AQEjVHr8bjnjVQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722844462600?e=1749686400&v=beta&t=7fEMRNz5H6Yv_JNan6U93Kr1H0FbTmR0jLGtIh-Z-DE',
+    image: '/Public/Images/saad-hossain.jpeg',
     bio: 'Agile expert with 10+ years in product development',
     social: { linkedin: '#', twitter: '#', github: '#' }
   }
@@ -68,11 +54,11 @@ export default function Team() {
               viewport={{ once: true }}
               className="bg-gray-800/50 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-700 hover:border-gray-600 group flex flex-col h-full"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-square overflow-hidden bg-gray-900">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
                   <div className="flex space-x-4">
